@@ -1,4 +1,4 @@
-* [[User Guide|Home]]
+* [[User Guide|User Guide]]
   * [[Send Message|Send Message]]
   * [[Consume Message|Consume Message]]
   * [[Transactional Message|Transactional Message]]
