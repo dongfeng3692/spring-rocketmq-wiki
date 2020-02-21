@@ -74,7 +74,7 @@ public class ConsumerApplication{
     * The consumer that replying Object
     */
     @Service
-		@RocketMQMessageListener(topic = "objectRequestTopic", consumerGroup = "objectRequestConsumer")
+    @RocketMQMessageListener(topic = "objectRequestTopic", consumerGroup = "objectRequestConsumer")
     public class ObjectConsumerWithReplyUser implements RocketMQReplyListener<User, User>{
         public void onMessage(User user) {
           	System.out.printf("------- ObjectConsumerWithReplyUser received: %s \n", user);
@@ -83,7 +83,7 @@ public class ConsumerApplication{
         }
     }
 
-		@Data
+    @Data
     @AllArgsConstructor
     public class User implements Serializable{
         private String userName;
