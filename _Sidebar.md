@@ -4,6 +4,7 @@
   * [[Transactional Message|Transactional Message]]
   * [[Message Tracing|Message Tracing]]
   * [[Authentication and authorisation|Authentication and authorisation]]
+  * [[Request-reply message exchange pattern|Request-reply message exchange pattern]]
   * [[FAQ|FAQ]]
 * [[用户手册|用户手册]]
   * [[发送消息|发送消息]]
@@ -11,5 +12,6 @@
   * [[事务消息|事务消息]]
   * [[消息轨迹|消息轨迹]]
   * [[ACL功能|ACL功能]]
+  * [[请求/应答语义支持|请求/应答语义支持]]
   * [[常见问题|常见问题]]
 
