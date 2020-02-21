@@ -16,7 +16,7 @@ This project aims to help developers quickly integrate [RocketMQ](http://rocketm
 - [x] Support message filter with tag and sql
 - [x] Support message tracing capability
 - [x] Authentication and authorisation
-- [ ] Request-reply mode
+- [x] Request-reply mode
 
 ## Prerequisites
 - JDK 1.8 and above
