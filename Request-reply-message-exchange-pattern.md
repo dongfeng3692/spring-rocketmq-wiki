@@ -24,7 +24,8 @@ public class ProducerApplication implements CommandLineRunner{
     public void run(String... args) throws Exception {
         // Send request in sync mode and receive a reply of String type.
         String replyString = rocketMQTemplate.sendAndReceive(stringRequestTopic, "request string", String.class);
-        
+        System.out.printf("send %s and receive %s %n", "request string", replyString);
+
         // Send request in async mode and receive a reply of User type.
         rocketMQTemplate.sendAndReceive(objectRequestTopic, new User("requestUserName",(byte) 9), new RocketMQLocalRequestCallback<User>() {
             @Override public void onSuccess(User message) {
