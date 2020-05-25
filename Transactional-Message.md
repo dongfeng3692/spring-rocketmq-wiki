@@ -27,7 +27,7 @@ public class ProducerApplication implements CommandLineRunner{
             Message msg = MessageBuilder.withPayload(..)...;
             // In sendMessageInTransaction(), the first parameter transaction name ("test")
             // must be same with the @RocketMQTransactionListener's member field 'transName'
-            rocketMQTemplate.sendMessageInTransaction("test", "test-topic", msg, null);
+            rocketMQTemplate.sendMessageInTransaction("test-topic", msg, null);
         } catch (MQClientException e) {
             e.printStackTrace(System.out);
         }
