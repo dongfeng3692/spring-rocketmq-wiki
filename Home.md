@@ -12,6 +12,7 @@ This project aims to help developers quickly integrate [RocketMQ](http://rocketm
 - [x] Send transactional messages
 - [x] Send scheduled messages with delay level
 - [x] Consume messages with concurrently mode (broadcasting/clustering)
+- [x] Consume messages with push/pull mode
 - [x] Consume ordered messages
 - [x] Filter messages using the tag or sql92 expression
 - [x] Support message tracing
