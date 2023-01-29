@@ -50,12 +50,17 @@ Modify application.properties
 ```properties
 ## application.properties
 rocketmq.name-server=127.0.0.1:9876
-rocketmq.consumer.group=my-group1
-rocketmq.consumer.topic=test
+# When set rocketmq.pull-consumer.group and rocketmq.pull-consumer.topic, rocketmqTemplate will start lite pull consumer
+# If you do not want to use lite pull consumer, please do not set rocketmq.pull-consumer.group and rocketmq.pull-consumer.topic
+rocketmq.pull-consumer.group=my-group1
+rocketmq.pull-consumer.topic=test
 ```
+
 > Note:
 > 
 > Maybe you need change `127.0.0.1:9876` with your real NameServer address for RocketMQ
+>
+> The effective configuration of lite pull consumer before is rocketmq.consumer.group and rocketmq.consumer.topic, but since it is very easy to be confused with push-consumer, it is changed to rocketmq.pull-consumer.group and rocketmq.pull-consumer.topic after version 2.2.3
 
 ```java
 @SpringBootApplication
