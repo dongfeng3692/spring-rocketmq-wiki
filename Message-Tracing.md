@@ -30,4 +30,4 @@ public class MyConsumer implements RocketMQListener<String> {
 > By default, the message track feature of Producer and Consumer is turned on and the trace-topic is RMQ_SYS_TRACE_TOPIC
 > The topic of message trace can be configured with `rocketmq.consumer.customized-trace-topic` configuration item, not required to be configured in each `@RocketMQMessageListener`
 
-For Alibaba Cloud message traces, you need to set the `accessChannel` configuration in `@RocketMQMessageListener` to `CLOUD`.
+> For Alibaba Cloud message traces, you need to set the `accessChannel` configuration in `@RocketMQMessageListener` to `CLOUD`.
