@@ -77,7 +77,7 @@ public class ConsumerApplication{
     @Service
     @RocketMQMessageListener(topic = "objectRequestTopic", consumerGroup = "objectRequestConsumer")
     public class ObjectConsumerWithReplyUser implements RocketMQReplyListener<User, User>{
-        public void onMessage(User user) {
+        public User onMessage(User user) {
           	System.out.printf("------- ObjectConsumerWithReplyUser received: %s \n", user);
           	User replyUser = new User("replyUserName",(byte) 10);	
           	return replyUser;
